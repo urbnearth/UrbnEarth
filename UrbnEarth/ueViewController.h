@@ -11,5 +11,12 @@
 @interface ueViewController : UIViewController
 
 @property (nonatomic, retain) UIImageView *backgroundview;
+@property (nonatomic, retain) UIView *opblack;
+@property (nonatomic, retain) UIView *contentHolder;
+@property (nonatomic, retain) UIImageView *logo;
+@property (nonatomic, retain) UILabel *lorr;
+@property (nonatomic, retain) UIView *emailHolder;
+@property (nonatomic, retain) UIView *passwordHolder;
+@property (nonatomic, retain) IBOutlet UIButton *loginBtn;
 
 @end
