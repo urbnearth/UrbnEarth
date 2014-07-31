@@ -21,6 +21,10 @@
 		4A6D9BD8198A09F6005C1D48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6D9BBA198A09F6005C1D48 /* UIKit.framework */; };
 		4A6D9BE0198A09F6005C1D48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D9BDE198A09F6005C1D48 /* InfoPlist.strings */; };
 		4A6D9BE2198A09F6005C1D48 /* UrbnEarthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D9BE1198A09F6005C1D48 /* UrbnEarthTests.m */; };
+		4AA8C2A4198A0E9D00250C6C /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA8C2A3198A0E9D00250C6C /* UserProfile.m */; };
+		4AA8C2A9198A178D00250C6C /* loginbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8C2A8198A178D00250C6C /* loginbg.png */; };
+		4AA8C2AB198A1A8700250C6C /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8C2AA198A1A8700250C6C /* image.png */; };
+		4AA8C2AD198A1B9100250C6C /* login2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA8C2AC198A1B9100250C6C /* login2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		4A6D9BDD198A09F6005C1D48 /* UrbnEarthTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UrbnEarthTests-Info.plist"; sourceTree = "<group>"; };
 		4A6D9BDF198A09F6005C1D48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A6D9BE1198A09F6005C1D48 /* UrbnEarthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrbnEarthTests.m; sourceTree = "<group>"; };
+		4AA8C2A2198A0E9D00250C6C /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserProfile.h; path = ../UserProfile.h; sourceTree = "<group>"; };
+		4AA8C2A3198A0E9D00250C6C /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserProfile.m; path = ../UserProfile.m; sourceTree = "<group>"; };
+		4AA8C2A8198A178D00250C6C /* loginbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbg.png; sourceTree = "<group>"; };
+		4AA8C2AA198A1A8700250C6C /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		4AA8C2AC198A1B9100250C6C /* login2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +121,15 @@
 		4A6D9BBC198A09F6005C1D48 /* UrbnEarth */ = {
 			isa = PBXGroup;
 			children = (
+				4AA8C2A2198A0E9D00250C6C /* UserProfile.h */,
+				4AA8C2A3198A0E9D00250C6C /* UserProfile.m */,
 				4A6D9BC5198A09F6005C1D48 /* ueAppDelegate.h */,
 				4A6D9BC6198A09F6005C1D48 /* ueAppDelegate.m */,
 				4A6D9BC8198A09F6005C1D48 /* Main.storyboard */,
 				4A6D9BCB198A09F6005C1D48 /* ueViewController.h */,
 				4A6D9BCC198A09F6005C1D48 /* ueViewController.m */,
 				4A6D9BCE198A09F6005C1D48 /* Images.xcassets */,
+				4AA8C2A5198A123E00250C6C /* Images */,
 				4A6D9BBD198A09F6005C1D48 /* Supporting Files */,
 			);
 			path = UrbnEarth;
@@ -150,6 +162,16 @@
 				4A6D9BDE198A09F6005C1D48 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AA8C2A5198A123E00250C6C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4AA8C2AA198A1A8700250C6C /* image.png */,
+				4AA8C2A8198A178D00250C6C /* loginbg.png */,
+				4AA8C2AC198A1B9100250C6C /* login2.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA8C2A9198A178D00250C6C /* loginbg.png in Resources */,
 				4A6D9BCF198A09F6005C1D48 /* Images.xcassets in Resources */,
 				4A6D9BC1198A09F6005C1D48 /* InfoPlist.strings in Resources */,
 				4A6D9BCA198A09F6005C1D48 /* Main.storyboard in Resources */,
+				4AA8C2AD198A1B9100250C6C /* login2.png in Resources */,
+				4AA8C2AB198A1A8700250C6C /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA8C2A4198A0E9D00250C6C /* UserProfile.m in Sources */,
 				4A6D9BC7198A09F6005C1D48 /* ueAppDelegate.m in Sources */,
 				4A6D9BCD198A09F6005C1D48 /* ueViewController.m in Sources */,
 				4A6D9BC3198A09F6005C1D48 /* main.m in Sources */,
@@ -457,6 +483,7 @@
 				4A6D9BE7198A09F6005C1D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A6D9BE8198A09F6005C1D48 /* Build configuration list for PBXNativeTarget "UrbnEarthTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +492,7 @@
 				4A6D9BEA198A09F6005C1D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

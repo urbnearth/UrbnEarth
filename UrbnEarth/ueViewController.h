@@ -10,4 +10,6 @@
 
 @interface ueViewController : UIViewController
 
+@property (nonatomic, retain) UIImageView *backgroundview;
+
 @end

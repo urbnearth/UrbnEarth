@@ -12,12 +12,23 @@
 
 @end
 
+
 @implementation ueViewController
+@synthesize backgroundview;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    backgroundview = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    backgroundview.image = [UIImage imageNamed:(@"login2.png")];
+    backgroundview.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:backgroundview];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
